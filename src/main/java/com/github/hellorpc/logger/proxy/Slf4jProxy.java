@@ -19,18 +19,10 @@ public class Slf4jProxy implements GeorgeLogger, Serializable {
     public Slf4jProxy() {
     }
 
-    public Slf4jProxy(Logger logger) {
-        this.logger = logger;
-    }
-
     @Override
-    public GeorgeLogger getInstance() {
-        return new Slf4jProxy();
-    }
-
-    @Override
-    public void bindingClass(Class<?> clazz) {
+    public Object bindingClassInitLogger(Class<?> clazz) {
         logger = LoggerFactory.getLogger(clazz);
+        return logger;
     }
 
     public boolean isTraceEnabled() {
