@@ -49,11 +49,11 @@
 
         <dependency>
             <groupId>com.georgeinfo.hellorpc</groupId>
-            <artifactId>hellorcp-base</artifactId>
+            <artifactId>hellorcp-logger</artifactId>
             <version>1.0.0</version>
             <scope>system</scope>
             <!--本地jar的路径,相对或者绝对都可以-->
-            <systemPath>${project.basedir}\lib\hellorcp-base-1.0.0.jar</systemPath>
+            <systemPath>${project.basedir}\lib\hellorcp-logger-1.0.0.jar</systemPath>
         </dependency>
         <!-- 添加本地依赖 结束 -->
     </dependencies>
